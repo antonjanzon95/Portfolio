@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header {
+    width: 100vw;
+    background-color: purple;
+}
+
+nav {
+    display: none;
+}
+
+.container-wide {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-thin {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.full-page {
+    min-height: 100vh;
+}
+
+footer {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg-1 {
+    background-color: gray;
+}
+
+.bg-2 {
+    background-color: rgb(106, 105, 105);
+}
+
+.bg-3 {
+    background-color: rgb(76, 75, 75);
+}
+
+.bg-4 {
+    background-color: rgb(140, 44, 44);
+}

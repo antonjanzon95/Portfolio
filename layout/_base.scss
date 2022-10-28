@@ -6,7 +6,7 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Fira Sans', sans-serif;
-    color: black;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,23 +17,41 @@ h1 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 0.8rem;
+    color: white;
+}
+
 header {
     padding: 5px;
     width: 100vw;
     height: 60px;
-    background-color: white;
+    background-color: #0B0C10;
 }
 
 .container-wide {
     display: grid;
+    grid-template-rows: auto;
+    place-items: center;
     padding: 10px;
 }
 
-.container-thin {
+.container-skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+}
+
+.container-hero {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mg-bottom {
+    margin-bottom: -1.5rem;
 }
 
 .full-page {
@@ -61,6 +79,19 @@ header {
     top: -30px;
 }
 
+figcaption {
+    text-align: center;
+}
+
+.project-img img {
+    width: 85px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-img img:hover {
+    transform: scale(1.5);
+}
+
 footer {
     width: 100vw;
     height: 70px;
@@ -71,19 +102,19 @@ footer {
 }
 
 .bg-1 {
-    background: white;
+    background: #0B0C10;
 }
 
 .bg-2 {
-    background: linear-gradient(rgb(64,64,64), rgb(96, 96, 96));
+    background: #0B0C10;
 }
 
 .bg-3 {
-    background: linear-gradient(rgb(96,96,96), rgb(64, 64, 64));
+    background: #0B0C10;
 }
 
 .bg-4 {
-    background: linear-gradient(rgb(64,64,64), rgb(32,32,32));
+    background: #0B0C10;
 }
 
 .menu-button {
@@ -98,7 +129,7 @@ footer {
 }
 
 .button-lines {
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 5px;
     border-radius: 3px;
@@ -157,6 +188,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     top: 0;
+    left: 0;
     opacity: 0;
     transition: opacity 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
     visibility: hidden;
@@ -173,7 +205,7 @@ nav ul {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    color: black;
+    color: #0B0C10;
     filter: drop-shadow(1px 3px 1px rgb(157, 157, 157));
     text-transform: uppercase;
     font-weight: 900;

@@ -4,6 +4,9 @@
 
 html, body {
     margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,28 +18,47 @@ h1 {
 }
 
 header {
+    padding: 5px;
     width: 100vw;
-    background-color: purple;
-}
-
-nav {
-    display: none;
+    height: 60px;
+    background-color: white;
 }
 
 .container-wide {
-    margin: 0 auto;
+    display: grid;
     padding: 10px;
-    text-align: center;
 }
 
 .container-thin {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
-    text-align: center;
 }
 
 .full-page {
     min-height: 100vh;
+}
+
+.hacker-img img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.icons img {
+    width: 80px;
+}
+
+.left-icon {
+    position: relative;
+    left: -30px;
+    top: -30px;
+}
+
+.right-icon {
+    position: relative;
+    left: 30px;
+    top: -30px;
 }
 
 footer {
@@ -44,20 +66,121 @@ footer {
     height: 70px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
 }
 
 .bg-1 {
-    background-color: gray;
+    background: white;
 }
 
 .bg-2 {
-    background-color: rgb(106, 105, 105);
+    background: linear-gradient(rgb(64,64,64), rgb(96, 96, 96));
 }
 
 .bg-3 {
-    background-color: rgb(76, 75, 75);
+    background: linear-gradient(rgb(96,96,96), rgb(64, 64, 64));
 }
 
 .bg-4 {
-    background-color: rgb(140, 44, 44);
+    background: linear-gradient(rgb(64,64,64), rgb(32,32,32));
+}
+
+.menu-button {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    background-color: transparent;
+    border: 0;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.button-lines {
+    background-color: black;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+input + .menu .menu-button span:nth-child(2) {
+    position: relative;
+    left: -5px;
+    transition: left 0.3s ease-in-out;
+}
+
+input:checked + .menu .menu-button span {
+    position: relative;
+}
+
+input:hover + .menu .menu-button span:nth-child(2) {
+    left: 0px;
+}
+
+input:checked + .menu .menu-button span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + .menu .menu-button span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+input:checked + .menu .menu-button span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 10px;
+}
+
+input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    visibility: hidden;
+    z-index: 5;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 3.3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    color: black;
+    filter: drop-shadow(1px 3px 1px rgb(157, 157, 157));
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 3.5rem;
 }

@@ -34,11 +34,13 @@ header {
     background-color: #0B0C10;
 }
 
-.container-wide {
-    display: grid;
-    grid-template-rows: auto;
-    place-items: center;
-    padding: 10px;
+.container-about {
+    text-align: center;
+    position: relative;
+}
+
+.container-projects {
+    text-align: center;
 }
 
 .container-skills {
@@ -127,6 +129,28 @@ figcaption {
 
 .project-img img:hover {
     transform: scale(1.5);
+}
+
+.contact {
+    position: absolute;
+    bottom: -230px;
+    left: 85px;
+    width: 200px;
+    text-align: center;
+}
+
+@keyframes moveArrow {
+    from { top: 0px; }
+    to { top: 5px; }
+}
+
+.arrow {
+    width: 40px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    left: 80px;
+    transform: rotate(90deg);
+    animation: moveArrow 0.5s infinite alternate;
 }
 
 footer {

@@ -39,6 +39,10 @@ header {
     position: relative;
 }
 
+.container-about img {
+    border-radius: 50%
+}
+
 .container-projects {
     text-align: center;
 }
@@ -94,7 +98,7 @@ header {
 
 .hacker-img img {
     border-radius: 50%;
-    width: 300px;
+    width: 320px;
 }
 
 .icons {

@@ -85,6 +85,7 @@ header {
 
 .full-page {
     min-height: 100vh;
+    position: relative;
 }
 
 .hacker-img {
@@ -133,7 +134,7 @@ figcaption {
 
 .contact {
     position: absolute;
-    bottom: -230px;
+    bottom: 0px;
     left: 85px;
     width: 200px;
     text-align: center;

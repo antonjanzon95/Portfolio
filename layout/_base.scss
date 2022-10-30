@@ -17,8 +17,13 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
 h3 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -43,7 +48,7 @@ header {
 }
 
 .container-hero {
-    padding: 3rem 1rem;
+    padding: 7rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,13 +59,43 @@ header {
     margin-bottom: -1.5rem;
 }
 
+.skills {
+    margin-top: 40px;
+    width: 80%;
+    height: 400px;
+    border: dotted 10px rgb(21, 21, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul progress {
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 2rem;
+}
+
 .full-page {
     min-height: 100vh;
+}
+
+.hacker-img {
+    margin-top: 40px;
 }
 
 .hacker-img img {
     border-radius: 50%;
     width: 300px;
+}
+
+.icons {
+    min-width: 250px;
 }
 
 .icons img {
@@ -81,6 +116,8 @@ header {
 
 figcaption {
     text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .project-img img {
@@ -126,6 +163,7 @@ footer {
     width: 50px;
     height: 30px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .button-lines {

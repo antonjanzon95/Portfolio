@@ -1,0 +1,42 @@
+.menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    height: 60px;
+    padding-right: 20px;
+    background: none;
+    overflow: hidden;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 1rem;
+    gap: 1.5rem;
+    filter: none;
+}
+
+nav ul li {
+    color: white;
+}
+
+nav ul li a {
+    transform: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 166, 0);
+}
+
+.menu button {
+    display: none;
+}
+
+header input {
+    display: none;
+}

@@ -317,6 +317,7 @@ html, body {
   scroll-behavior: smooth;
   font-family: "Fira Sans", sans-serif;
   color: white;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -328,7 +329,8 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 40px;
+  min-width: 325px;
+  padding: 40px 0;
   font-size: 2.2rem;
 }
 
@@ -337,11 +339,16 @@ h3 {
   color: white;
 }
 
+p {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
 header {
   padding: 5px;
   width: 100vw;
   height: 60px;
-  background-color: #0B0C10;
+  background-image: linear-gradient(#011e29, #054b4b);
 }
 
 .container-about {
@@ -354,17 +361,25 @@ header {
 }
 
 .container-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.container-projects figure {
+  margin-bottom: 100px;
 }
 
 .container-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .container-hero {
-  padding: 7rem 1rem;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,7 +464,7 @@ figcaption {
 .contact {
   position: absolute;
   bottom: 0px;
-  left: 85px;
+  left: calc(50% - 100px);
   width: 200px;
   text-align: center;
 }
@@ -491,11 +506,11 @@ footer {
 }
 
 .bg-1 {
-  background: #0B0C10;
+  background: #191c27;
 }
 
 .bg-2 {
-  background: #0B0C10;
+  background-image: linear-gradient(#1d2233, #191c27);
 }
 
 .bg-3 {
@@ -504,6 +519,7 @@ footer {
 
 .bg-4 {
   background: #0B0C10;
+  padding: 10px;
 }
 
 .menu-button {

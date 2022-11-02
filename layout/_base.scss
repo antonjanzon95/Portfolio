@@ -28,6 +28,7 @@ h2 {
     min-width: 325px;
     padding: 40px 0;
     font-size: 2.2rem;
+    color: rgb(255, 166, 0)
 }
 
 h3 {
@@ -66,8 +67,8 @@ header {
     color: #3a3a3a;
 }
 
-.container-projects figure {
-    margin-bottom: 100px;
+.project-img {
+    padding-bottom: 200px;
 }
 
 .container-skills {
@@ -236,6 +237,7 @@ footer a:hover {
     border-radius: 3px;
     display: block;
     margin-bottom: 5px;
+    box-shadow: 0 0 10px black;
 }
 
 input {

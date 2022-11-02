@@ -40,3 +40,66 @@ nav ul li a:hover {
 header input {
     display: none;
 }
+
+.hacker-img img {
+    width: 640px;
+    height: 480px;
+}
+
+.icons img {
+    width: 160px;
+    height: 160px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+li {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.35rem;
+}
+
+.skills {
+    max-width: 1000px;
+}
+
+.project-img img {
+    width: 127.5px;
+    height: 277.5px;
+}
+
+.project-img {
+    padding: 0;
+}
+
+.container-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: 
+        "header header"
+        "left right"
+        "left2 right2"
+    ;
+    justify-content: center;
+}
+
+.project-grid-header {
+    grid-area: header;
+}
+
+.left-grid-content {
+    grid-area: left;
+}
+
+.right-grid-content {
+    grid-area: right;
+}

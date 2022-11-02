@@ -80,6 +80,10 @@ p {
     padding: 0;
 }
 
+.desktop-only {
+    display: block;
+}
+
 .container-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;

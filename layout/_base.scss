@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Fira Sans', sans-serif;
@@ -31,19 +31,13 @@ h2 {
     color: rgb(255, 166, 0)
 }
 
-h3 {
-    font-size: 1rem;
-    color: white;
-}
-
 p {
     max-width: 490px;
     margin: 0 auto;
 }
 
 header {
-    padding: 5px;
-    width: 100vw;
+    padding: 5px; 
     height: 60px;
     background-color: rgb(22, 18, 72);
     border-bottom: 2px solid black;
@@ -53,6 +47,12 @@ header {
     text-align: center;
     position: relative;
     color: #3a3a3a;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.container-about figure {
+    margin: 0 auto;
 }
 
 .container-about img {
@@ -68,12 +68,13 @@ header {
 }
 
 .container-projects h2,
-.container-about h2 {
+.bg-4 h2 {
     color: #1d2233;
 }
 
 .project-img {
     padding-bottom: 200px;
+    min-width: 264px;
 }
 
 .container-skills {
@@ -84,40 +85,40 @@ header {
 }
 
 .container-hero {
-    padding: 60px 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.mg-bottom {
+.mg {
+    padding-top: 5rem;
     margin-bottom: -1.5rem;
 }
 
 .skills {
-    margin-top: 40px;
+    margin: 30px 0px;
+    padding: 20px;
     width: 80%;
-    height: 400px;
+    min-height: 30vh;
     border: dotted 10px rgb(238, 238, 252);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills ul progress {
+.skills progress {
     margin-bottom: 1rem;
     width: 80%;
     height: 2rem;
+    margin: 0 auto;
 }
 
 .full-page {
+    padding: 20px;
+    max-width: 100vw;
     min-height: 100vh;
     position: relative;
 }
@@ -189,7 +190,6 @@ figcaption {
 }
 
 footer {
-    width: 100vw;
     height: 70px;
     background-color: rgb(238, 238, 252);
     display: flex;
@@ -206,21 +206,14 @@ footer a:hover {
     transform: scale(1.3);
 }
 
-.bg-1 {
+.bg-1, .bg-3 {
     background: #1d2233;
+    color: rgb(238, 238, 241);
 }
 
-.bg-2 {
+.bg-2, .bg-4 {
     background: rgb(238, 238, 241);
-}
-
-.bg-3 {
-    background: #1d2233;
-}
-
-.bg-4 {
-    background: rgb(238, 238, 241);
-    padding: 10px;
+    color: #1d2233;
 }
 
 .menu-button {
@@ -292,7 +285,7 @@ input:checked + .menu nav {
 nav {
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     top: 0;
@@ -307,6 +300,7 @@ nav ul {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     font-size: 3.3rem;
     list-style: none;
     display: flex;
@@ -326,4 +320,34 @@ li a {
 
 .desktop-only {
     display: none;
+}
+
+.split {
+    padding-bottom: 100px;
+}
+
+.right {
+    padding-top: 50px;
+}
+
+.split h3 {
+    text-decoration: underline;
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+}
+
+.split h4 {
+    color: #050505;
+    font-size: 1.1rem;
+}
+
+.split span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.split p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    line-height: 1rem;
 }

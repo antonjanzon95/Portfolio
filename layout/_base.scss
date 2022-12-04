@@ -158,9 +158,22 @@ figcaption {
     margin-bottom: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .project-img img {
-    width: 85px;
+    width: 294px;
     transition: transform 0.5s ease-in-out;
+}
+
+#donutWebshop {
+    width: 400px;
+}
+
+.moon {
+    width: 85px;
 }
 
 .project-img img:hover {
